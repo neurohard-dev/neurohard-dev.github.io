@@ -1,19 +1,17 @@
 ---
 ---
 
-@use 'main';
+@import 'main';
 
 /* Personalización de la sidebar */
 #sidebar {
-  width: 250px; /* Valor por defecto es ~260px, ajústalo a tu gusto */
+  width: 250px;
 }
 
-/* Ajustar el contenido principal para compensar */
 #main-wrapper {
-  margin-left: 280px; /* Debe coincidir con el ancho de la sidebar */
+  margin-left: 250px;
 }
 
-/* Para pantallas pequeñas, resetear (la sidebar se oculta) */
 @media (max-width: 849px) {
   #main-wrapper {
     margin-left: 0;
